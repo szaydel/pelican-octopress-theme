@@ -1,4 +1,5 @@
-$noise-bg: image-url('noise.png') top left !default;
+//$noise-bg: image-url('noise.png') top left !default;
+$noise-bg: image-url('noise-bg.png') top left !default;
 $img-border: inline-image('dotted-border.png');
 
 // Main Link Colors
@@ -8,7 +9,8 @@ $link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !defaul
 $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 
 // Main Section Colors
-$main-bg: #f8f8f8 !default;
+//$main-bg: #f8f8f8 !default;
+$main-bg: #dadee5 !default;
 $page-bg: #252525 !default;
 $article-border: #eeeeee !default;
 

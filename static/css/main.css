@@ -106,11 +106,11 @@ html {
 }
 
 body > div {
-  background: #f2f2f2 url('../images/noise-bg.png?1362028393') top left;
+  background: #f2f2f2 url('../images/noise-bg.png?1362278666') top left;
   border-bottom: 1px solid #bfbfbf;
 }
 body > div > div {
-  background: #c3c7ce url('../images/noise-bg.png?1362028393') top left;
+  background: #c3c7ce url('../images/noise-bg.png?1362278666') top left;
   border-right: 1px solid #e0e0e0;
 }
 
@@ -1098,7 +1098,7 @@ p.meta + .sharing {
   text-align: right;
   font-size: 13px;
   line-height: 1.45em;
-  background: #073642 url('../images/noise-bg.png?1362028393') top left !important;
+  background: #073642 url('../images/noise-bg.png?1362278666') top left !important;
   border-right: 1px solid #00232c !important;
   -webkit-box-shadow: #083e4b -1px 0 inset;
   -moz-box-shadow: #083e4b -1px 0 inset;
@@ -1132,6 +1132,10 @@ html .gist .gist-file {
   border: none;
   padding-top: 26px !important;
 }
+html .gist .gist-file table {
+  width: 789px;
+  margin-bottom: 0;
+}
 html .gist .gist-file .gist-syntax {
   border-bottom: 0 !important;
   background: none !important;
@@ -1144,7 +1148,7 @@ html .gist .gist-file .gist-meta {
   border: 1px solid #083e4b !important;
   color: #586e75;
   font-size: .7em !important;
-  background: #073642 url('../images/noise-bg.png?1362028393') top left;
+  background: #073642 url('../images/noise-bg.png?1362278666') top left;
   line-height: 1.5em;
 }
 html .gist .gist-file .gist-meta a {
@@ -1172,7 +1176,7 @@ html .gist .gist-file .gist-meta a[href*=raw] {
 }
 
 .mono, pre, code, tt, p code, p tt, li code, li tt {
-  background: #002b36 url('../images/noise-bg.png?1362028393') top left;
+  background: #002b36 url('../images/noise-bg.png?1362278666') top left;
   -webkit-border-radius: 0.4em;
   -moz-border-radius: 0.4em;
   -ms-border-radius: 0.4em;
@@ -1226,7 +1230,7 @@ p .mono .mono, p pre .mono, p code .mono, p tt .mono, p code .mono, p tt .mono, 
   padding: .8em !important;
   overflow-x: auto;
   line-height: 1.45em;
-  background: #002b36 url('../images/noise-bg.png?1362028393') top left !important;
+  background: #002b36 url('../images/noise-bg.png?1362278666') top left !important;
   color: #93a1a1 !important;
   /* Comment */
   /* Comment.Multiline */
@@ -1770,7 +1774,7 @@ aside.sidebar:hover a:hover {
     -webkit-border-bottom-right-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
     text-align: center;
-    background: #c3c7ce url('../images/noise-bg.png?1362028393') top left;
+    background: #c3c7ce url('../images/noise-bg.png?1362278666') top left;
     border-bottom: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0;
     content: "\00BB";

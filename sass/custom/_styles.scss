@@ -1,2 +1,33 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+@import "../base/solarized";
+@import "typeplate";
+
+$sam_custom_mono: "Source Code Pro", Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+
+%sam_custom_pre {
+  color: $base02;
+  background: $base2;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: $base01;
+  @extend code;
+  @extend pre;
+  font-kerning: auto;
+  font-family: $sam_custom_mono;
+  font-size: 0.70em;
+}
+
+.mono, pre, code, tt, p code, p tt, li code, li tt {
+  @extend %sam_custom_pre;
+
+}
+
+// associate h1-h6 tags with their appropriate greek heading
+h1 { @extend .alpha; @extend %hN; }
+h2 { @extend .beta; @extend %hN; }
+h3 { @extend .gamma; @extend %hN; }
+h4 { @extend .delta; @extend %hN; }
+h5 { @extend .epsilon; @extend %hN; }
+h6 { @extend .zeta; @extend %hN; }

@@ -1,11 +1,32 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
-
 @import "../base/solarized";
 @import "typeplate";
 
 $sam_custom_mono: "Source Code Pro", Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
 
+$weight: normal;
+$line-height: 1.65;
+$font-size: 100; // percentage value (16 * 112.5% = 18px)
+$font-base: $zeta * ($font-size/100); // converts our percentage to a pixel value
+$measure: $font-base * $line-height;
+$art_p_fontsz: $font-base+px;
+
+body {
+
+  > header {
+    //@include radial-gradient($base00, $base03);
+    @include linear-gradient(top, $base03, $base01);
+    //@include radial-gradient($base02, $base03);
+    text-align: center;
+  }
+
+}
+
+%sam_custom_p {
+  text-indent: 1.5em;
+
+}
 %sam_custom_pre {
   color: $base02;
   background: $base2;
@@ -19,9 +40,16 @@ $sam_custom_mono: "Source Code Pro", Menlo, Monaco, "Andale Mono", "lucida conso
   font-size: 0.70em;
 }
 
+body #content > div > article > div > p {
+  //@extend %sam_custom_p;
+  @include dropcap($margin: -2px, $padding: 10px, $font-size: 6em, $text-indent: 0, $lineHeight: .8em);
+  //text-indent: 1.5em;
+  font-size: $art_p_fontsz;
+  word-spacing: 0.15em;
+}
+
 .mono, pre, code, tt, p code, p tt, li code, li tt {
   @extend %sam_custom_pre;
-
 }
 
 // associate h1-h6 tags with their appropriate greek heading

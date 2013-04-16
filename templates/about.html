@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}About Me{% endblock %}
+{% block content %}
+
+    <div>
+        <article class="hentry" role="article">
+
+    <h1 class="entry-title">A brief About Me</h1>
+        <div class="about-content">
+            <p>My name is Sam Zaydel and I work for RackTop Systems, a small but ambitious company with a primary goal
+            of building reliable, robust and high-performance storage systems that address real challenges of our customers.
+            I am primarily responsible for defining products, which means that I have to have a good understanding of what
+            actual problems our customers have and how we can best help them solve them, using open technologies while being
+            cost and expertise conscious.
+            </p>
+        </div>
+        </article>
+    </div>
+
+    {% if DISQUS_SITENAME %}
+<section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include '_includes/disqus_thread.html' %}</div>
+</section>
+{% endif %}
+{% include '_includes/sidebar.html' %}
+{% endblock %}
